@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  margin:0;
+  padding:0;
+}
+
+.container{
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+footer{
+  background-color: hsl(217, 54%, 11%);
+}
+
+.product-card{
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 15px;
+  contain:content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}
+
+.product-img{
+  display: flex;
+  text-align: center;
+}
+
+.product-img img{
+  border-radius: 15px;
+  width: 255px%;
+  height: 255px;
+  margin: 20px 0;
+  position: relative;
+}
+
+/* OVERLAY */
+
+.overlay{
+  background-color: hsla(178, 100%, 50%, 0.4);
+  border-radius: 15px;
+  position:absolute;
+  width: 255px;
+  height: 255px;
+  top:20px;
+  display:none;
+  cursor:pointer;
+}
+
+.overlay img{
+  width: 15%;
+  height: auto;
+  padding: 33% 0;
+}
+
+.product-img:hover .overlay{
+  display: block;
+}
+
+/* PRODUCT DETAILS */
+
+.product-details, .pricing, .author{
+  padding: 0 25px;
+}
+
+.title{
+  color:white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.title:hover, .author a:hover{
+  color: hsl(178, 100%, 50%);
+}
+
+.description{
+  color: hsl(215, 51%, 70%);
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  padding: 15px 0;
+}
+
+/* PRICING */
+
+.pricing{
+  display: flex;
+  font-size: 0.9rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.ethereum{
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ethereum-img{
+  width: 10%;
+  margin-right: 3px;
+}
+
+.clock{
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clock-img{
+  width:20%;
+  margin-right: 3px;
+}
+
+hr{
+  border-color: hsl(215, 32%, 27%);
+  border-top: none;
+  margin: 15px 0;
+  width: 85%;
+}
+
+.author{
+  color: hsl(215, 51%, 70%);
+  font-size: 0.9rem;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.author img{
+  border-radius: 100px;
+  border: 1px solid white;
+  width: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.author-desc{
+  margin-left: 12px;
+}
+
+.author a{
+  color: white;
+  text-decoration: none;
+}
